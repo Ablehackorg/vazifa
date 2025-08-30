@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Job Application</h1>
+  <p>Please complete the form below to apply for a position with us.</p>
+
+  <form>
+    <label>Full Name *</label><br>
+    <input type="text" name="first_name" placeholder="First Name" required>
+    <input type="text" name="middle_name" placeholder="Middle Name">
+    <input type="text" name="last_name" placeholder="Last Name" required>
+    <br><br>
+
+    <label>Body Size *</label><br>
+    <input type="number" name="height" placeholder="Height (cm)" required>
+    <input type="number" name="weight" placeholder="Weight (kg)" required>
+    <br><br>
+
+    <label>Birth Date</label><br>
+    <input type="date" name="birth_date">
+    <br><br>
+
+    <label>Family Status *</label><br>
+    <select name="family_status" required>
+      <option value="">Select</option>
+      <option>Single</option>
+      <option>Married</option>
+      <option>Divorced</option>
+      <option>Other</option>
+    </select>
+    <br><br>
+
+    <label>Current Address *</label><br>
+    <input type="text" name="address1" placeholder="Street Address" required><br>
+    <input type="text" name="address2" placeholder="Street Address Line 2"><br>
+    <input type="text" name="city" placeholder="City" required><br>
+    <input type="text" name="state" placeholder="State / Province" required><br>
+    <input type="text" name="zip" placeholder="Postal / Zip Code" required>
+    <br><br>
+
+    <label>Email Address *</label><br>
+    <input type="email" name="email" placeholder="example@example.com" required>
+    <br><br>
+
+    <label>Phone Number *</label><br>
+    <input type="text" name="area_code" placeholder="Area Code" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <br><br>
+
+    <label>LinkedIn *</label><br>
+    <input type="text" name="linkedin" placeholder="Profile URL" required>
+    <br><br>
+
+    <label>Experience *</label><br>
+    <input type="text" name="experience" placeholder="e.g. 5 years in Sales" required>
+    <br><br>
+
+    <label>Position Applied *</label><br>
+    <select name="position" required>
+      <option value="">Select</option>
+      <option>Marketing Specialist</option>
+      <option>Sales Manager</option>
+      <option>Product Lead</option>
+      <option>Developer</option>
+    </select>
+    <br><br>
+
+    <label>How did you hear about us? *</label><br>
+    <input type="text" name="source" required>
+    <br><br>
+
+    <label>Available Start Date *</label><br>
+    <input type="date" name="start_date" required>
+    <br><br>
+
+    <label>Upload Resume *</label><br>
+    <input type="file" name="resume" required>
+    <br><br>
+
+    <label>Cover Letter *</label><br>
+    <textarea name="cover_letter" rows="5" required></textarea>
+    <br><br>
+
+    <button type="submit">Apply</button>
+  </form>
+</body>
+</html>
